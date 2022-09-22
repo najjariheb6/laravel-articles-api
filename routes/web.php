@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('forgot_password', 'auth\ResetPasswordController@resetView')->name('password.reset');
